@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import socialbase.com.br.challengesocialbase.R;
 import br.com.socialbase.challengesocialbase.model.Post;
 import br.com.socialbase.challengesocialbase.util.Constants;
 
@@ -25,7 +24,7 @@ public class DetailActivity extends BaseActivity implements Constants{
         setContentView(R.layout.activity_scrolling);
         post = (Post) getIntent().getSerializableExtra(KEY_DETAIL);
         setActionBar(post.getTitle());
-        setHomeButtonEnable(true);
+        setHomeButtonEnabled(true);
 
         img = (ImageView) findViewById(R.id.img);
         if (post.getImage() != null && post.getImage().getMedium() != null) {

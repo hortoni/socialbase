@@ -6,11 +6,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import socialbase.com.br.challengesocialbase.R;
-
-/**
- * Created by hortoni on 22/02/16.
- */
 public class BaseActivity  extends AppCompatActivity {
 
     private Toolbar toolbar;
@@ -39,7 +34,7 @@ public class BaseActivity  extends AppCompatActivity {
         }
     }
 
-    protected void setHomeButtonEnable(boolean enabled) {
+    protected void setHomeButtonEnabled(boolean enabled) {
         getSupportActionBar().setDisplayHomeAsUpEnabled(enabled);
         getSupportActionBar().setHomeButtonEnabled(enabled);
     }

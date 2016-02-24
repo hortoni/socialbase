@@ -2,9 +2,6 @@ package br.com.socialbase.challengesocialbase.model;
 
 import java.io.Serializable;
 
-/**
- * Created by hortoni on 22/02/16.
- */
 public class Post implements Serializable {
 
     private int revisionid;

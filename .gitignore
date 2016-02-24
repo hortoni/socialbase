@@ -2,7 +2,7 @@
 *.iml
 .idea/
 
-# Gradlel
+#Gradle
 .gradle/
 build/
 

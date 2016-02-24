@@ -5,7 +5,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import socialbase.com.br.challengesocialbase.R;
 import br.com.socialbase.challengesocialbase.util.ConnectionUtil;
 import br.com.socialbase.challengesocialbase.util.Constants;
 
@@ -18,7 +17,7 @@ public class WebActivity extends BaseActivity implements Constants{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         setActionBar(getIntent().getStringExtra(KEY_TITLE));
-        setHomeButtonEnable(true);
+        setHomeButtonEnabled(true);
 
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
         swipeLayout.setColorSchemeResources(R.color.colorPrimary);

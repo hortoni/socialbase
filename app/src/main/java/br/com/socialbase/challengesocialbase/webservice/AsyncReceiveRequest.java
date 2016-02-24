@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 import br.com.socialbase.challengesocialbase.util.Constants;
-import br.com.socialbase.challengesocialbase.util.MensagingUtils;
+import br.com.socialbase.challengesocialbase.util.MessagingUtils;
 
 
 public abstract class AsyncReceiveRequest extends AsyncTask<Void, Void, WsResult> implements Constants {
@@ -33,7 +33,7 @@ public abstract class AsyncReceiveRequest extends AsyncTask<Void, Void, WsResult
 	protected void onPreExecute() {
 		super.onPreExecute();
 		if (withDialog) {
-			MensagingUtils.triggerLoadingDialog(context);
+			MessagingUtils.triggerLoadingDialog(context);
 		}
 	}
 
@@ -55,8 +55,8 @@ public abstract class AsyncReceiveRequest extends AsyncTask<Void, Void, WsResult
 	protected void onPostExecute(WsResult result) {
 		super.onPostExecute(result);
 		if (withDialog) {
-        	MensagingUtils.dismissDialog();
-        	MensagingUtils.generateShortToast(context, result.getResponse().isStatusGood() ?
+        	MessagingUtils.dismissDialog();
+        	MessagingUtils.generateShortToast(context, result.getResponse().isStatusGood() ?
 					SUCCESS_MSG : result.getResponse().getMessage());
 		}
 		onExecutionCompleted(result);

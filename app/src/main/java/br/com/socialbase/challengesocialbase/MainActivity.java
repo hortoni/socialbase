@@ -10,7 +10,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import socialbase.com.br.challengesocialbase.R;
 import br.com.socialbase.challengesocialbase.component.DatabaseHelper;
 import br.com.socialbase.challengesocialbase.component.PostListAdapter;
 import br.com.socialbase.challengesocialbase.model.Post;

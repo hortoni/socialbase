@@ -6,20 +6,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.widget.Toast;
 
-public class MensagingUtils {
+public class MessagingUtils {
 
 	private static final String MSG_LOADING_DIALOG = "Buscando Dados no Servidor ...";
 	private static final String MSG_SAVING_DIALOG = "Adicionando Dados no Servidor ...";
-
 	private static ProgressDialog ringProgressDialog;
 
-	/**
-	 * Lança um PopUp com um título e uma mensagem. Usuario necessita apertar 'ok' para fechar.
-	 *
-	 * @param context
-	 * @param title
-	 * @param message
-	 */
 	public static void generateDialog(Context context, String title, String message) {
 
 		new Builder(context)
@@ -35,20 +27,10 @@ public class MensagingUtils {
 						}).show();
 	}
 
-	/**
-	 * Lança um popUp de carregamento com uma mensagem padrão de carregamento.
-	 *
-	 * @param context (Ao passar o contexto, recomenda-se passar Activity.this no parâmetro)
-	 */
 	public static void triggerLoadingDialog(Context context) {
 		triggerDialog(context, MSG_LOADING_DIALOG);
 	}
 
-	/**
-	 * Lança um popUp de carregamento com uma mensagem padrão de salvamento.
-	 *
-	 * @param context (Ao passar o contexto, recomenda-se passar Activity.this no parâmetro)
-	 */
 	public static void triggerSavingDialog(Context context) {
 		triggerDialog(context, MSG_SAVING_DIALOG);
 	}
@@ -67,13 +49,9 @@ public class MensagingUtils {
 		ringProgressDialog = ProgressDialog.show(context, "Carregando...", msg, true, true);
 		} catch (Exception e) {
 			ringProgressDialog = null;
-//			MensagingUtils.generateLongToast(context, e.getMessage());
 		}
 	}
 
-	/**
-	 * Fecha o progress dialog que está na tela no momento.
-	 */
 	public static void dismissDialog(){
 		try {
 			if (ringProgressDialog != null){
@@ -83,15 +61,9 @@ public class MensagingUtils {
 				ringProgressDialog = null;
 			}
 		} catch (Exception e) {
-			// Erro desconhecido. Unable to attach window
 		}
 	}
 
-	/**
-	 * Gera Toast de duração curta
-	 * @param context
-	 * @param text
-	 */
 	public static void generateShortToast(Context context, String text){
 		Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
 	}

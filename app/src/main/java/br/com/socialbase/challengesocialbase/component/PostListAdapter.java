@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 import br.com.socialbase.challengesocialbase.DetailActivity;
-import socialbase.com.br.challengesocialbase.R;
+import br.com.socialbase.challengesocialbase.R;
 import br.com.socialbase.challengesocialbase.model.Post;
 import br.com.socialbase.challengesocialbase.util.Constants;
 import br.com.socialbase.challengesocialbase.util.Typefaces;

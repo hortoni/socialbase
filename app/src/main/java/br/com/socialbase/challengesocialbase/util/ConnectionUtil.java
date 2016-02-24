@@ -6,9 +6,6 @@ import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-/**
- * Created by hortoni on 22/10/15.
- */
 public class ConnectionUtil {
     public static boolean isConnected(Context context) {
             ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

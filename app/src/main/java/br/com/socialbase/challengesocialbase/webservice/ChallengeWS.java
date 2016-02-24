@@ -12,13 +12,6 @@ import java.net.URL;
 import br.com.socialbase.challengesocialbase.util.Constants;
 
 
-/**
- * Classe que implementa os métodos HTTP GET e POST. Esses métodos são
- * utilizados na classe Rest para fazer as requisições ao Web Service.
- * 
- * @author hortoni
- * 
- */
 public class ChallengeWS implements Constants {
 
 	public static final String CONNECTION_ERROR = "Falha na conexão";

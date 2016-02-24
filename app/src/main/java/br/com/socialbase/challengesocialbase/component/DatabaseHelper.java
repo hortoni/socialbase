@@ -14,9 +14,6 @@ import java.util.List;
 import br.com.socialbase.challengesocialbase.model.Image;
 import br.com.socialbase.challengesocialbase.model.Post;
 
-/**
- * Created by hortoni on 22/02/16.
- */
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static DatabaseHelper instance;
