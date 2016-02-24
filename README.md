@@ -8,10 +8,6 @@ O aplicativo contém 3 telas:
 - Detail
 - Web
 
-# Arquitetura
-A integração com o Twitter foi feita através da API <a href="https://get.fabric.io/">Fabric</a>, mantida pela própria equipe do Twitter. Ela é responsável por abstrair as chamadas aos serviços REST que o Twitter fornece, facilitando o desenvolvimento do aplicativo.
-
-
 # Aplicativo
 A primeira tela do aplicativo é a tela de principal. Essa tela é responsável por carregar os itens do webservice e mostrar ao usuário em forma de lista. Ao carregar, o aplicativo guarda essa lista de objetos em um banco de dados local para ser carregado na ausência de Internet. O webservice escolhido foi o do <a href="https://https://www.ifixit.com/api/2.0/guides/">IFixIt</a>. Também é possível fazer uma busca por título nessa lista.
 
