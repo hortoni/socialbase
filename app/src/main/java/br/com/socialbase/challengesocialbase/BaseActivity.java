@@ -1,10 +1,12 @@
-package socialbase.com.br.challengesocialbase;
+package br.com.socialbase.challengesocialbase;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import socialbase.com.br.challengesocialbase.R;
 
 /**
  * Created by hortoni on 22/02/16.

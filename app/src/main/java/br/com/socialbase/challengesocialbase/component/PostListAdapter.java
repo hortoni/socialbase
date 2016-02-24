@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.component;
+package br.com.socialbase.challengesocialbase.component;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,11 +16,11 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import socialbase.com.br.challengesocialbase.DetailActivity;
+import br.com.socialbase.challengesocialbase.DetailActivity;
 import socialbase.com.br.challengesocialbase.R;
-import socialbase.com.br.challengesocialbase.model.Post;
-import socialbase.com.br.challengesocialbase.util.Constants;
-import socialbase.com.br.challengesocialbase.util.Typefaces;
+import br.com.socialbase.challengesocialbase.model.Post;
+import br.com.socialbase.challengesocialbase.util.Constants;
+import br.com.socialbase.challengesocialbase.util.Typefaces;
 
 public class PostListAdapter extends ArrayAdapter<Post> implements View.OnClickListener, Constants {
 	Context context;

@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.webservice;
+package br.com.socialbase.challengesocialbase.webservice;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import socialbase.com.br.challengesocialbase.util.Constants;
+import br.com.socialbase.challengesocialbase.util.Constants;
 
 
 /**
@@ -35,7 +35,6 @@ public class ChallengeWS implements Constants {
 
 			//add request header
 			conn.setRequestProperty("Content-type", "application/json");
-//			conn.setRequestProperty("Authorization", "Token " + AutenticationTokenUtil.getAutenticationToken(context));
 			conn.connect();
 
 			result[0] = String.valueOf(conn.getResponseCode());
@@ -72,7 +71,6 @@ public class ChallengeWS implements Constants {
 
 			//add request header
 			conn.setRequestProperty("Content-type", "application/json");
-//			conn.setRequestProperty("Authorization", "Token" + AutenticationTokenUtil.getAutenticationToken(context));
 
 			conn.setDoOutput(true);
 			conn.setDoInput(true);

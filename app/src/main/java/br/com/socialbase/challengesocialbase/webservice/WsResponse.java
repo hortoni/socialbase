@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.webservice;
+package br.com.socialbase.challengesocialbase.webservice;
 
 public class WsResponse {
 

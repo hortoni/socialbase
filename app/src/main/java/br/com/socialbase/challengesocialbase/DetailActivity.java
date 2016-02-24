@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase;
+package br.com.socialbase.challengesocialbase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import socialbase.com.br.challengesocialbase.model.Post;
-import socialbase.com.br.challengesocialbase.util.Constants;
+import socialbase.com.br.challengesocialbase.R;
+import br.com.socialbase.challengesocialbase.model.Post;
+import br.com.socialbase.challengesocialbase.util.Constants;
 
 public class DetailActivity extends BaseActivity implements Constants{
 

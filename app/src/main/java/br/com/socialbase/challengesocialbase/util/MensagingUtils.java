@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.util;
+package br.com.socialbase.challengesocialbase.util;
 
 import android.app.AlertDialog.Builder;
 import android.app.ProgressDialog;

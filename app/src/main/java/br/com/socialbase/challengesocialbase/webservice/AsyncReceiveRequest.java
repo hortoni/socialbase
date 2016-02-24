@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.webservice;
+package br.com.socialbase.challengesocialbase.webservice;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -6,8 +6,8 @@ import android.os.AsyncTask;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-import socialbase.com.br.challengesocialbase.util.Constants;
-import socialbase.com.br.challengesocialbase.util.MensagingUtils;
+import br.com.socialbase.challengesocialbase.util.Constants;
+import br.com.socialbase.challengesocialbase.util.MensagingUtils;
 
 
 public abstract class AsyncReceiveRequest extends AsyncTask<Void, Void, WsResult> implements Constants {
@@ -18,7 +18,7 @@ public abstract class AsyncReceiveRequest extends AsyncTask<Void, Void, WsResult
 	private int webserviceKey;
 	private ArrayList<String> args;
 	private boolean withDialog = true;
-	
+
 	public AsyncReceiveRequest(Context context) {
 		this.context = context;
 	}

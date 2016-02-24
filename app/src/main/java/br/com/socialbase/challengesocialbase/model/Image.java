@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.model;
+package br.com.socialbase.challengesocialbase.model;
 
 import java.io.Serializable;
 

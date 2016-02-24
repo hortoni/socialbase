@@ -1,12 +1,13 @@
-package socialbase.com.br.challengesocialbase;
+package br.com.socialbase.challengesocialbase;
 
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import socialbase.com.br.challengesocialbase.util.ConnectionUtil;
-import socialbase.com.br.challengesocialbase.util.Constants;
+import socialbase.com.br.challengesocialbase.R;
+import br.com.socialbase.challengesocialbase.util.ConnectionUtil;
+import br.com.socialbase.challengesocialbase.util.Constants;
 
 public class WebActivity extends BaseActivity implements Constants{
 

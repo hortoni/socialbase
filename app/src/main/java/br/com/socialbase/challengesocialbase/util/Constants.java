@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.util;
+package br.com.socialbase.challengesocialbase.util;
 
 /**
  * Created by hortoni on 07/10/15.

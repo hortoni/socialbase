@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase.component;
+package br.com.socialbase.challengesocialbase.component;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,8 +11,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import socialbase.com.br.challengesocialbase.model.Image;
-import socialbase.com.br.challengesocialbase.model.Post;
+import br.com.socialbase.challengesocialbase.model.Image;
+import br.com.socialbase.challengesocialbase.model.Post;
 
 /**
  * Created by hortoni on 22/02/16.

@@ -1,4 +1,4 @@
-package socialbase.com.br.challengesocialbase;
+package br.com.socialbase.challengesocialbase;
 
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -10,13 +10,14 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import socialbase.com.br.challengesocialbase.component.DatabaseHelper;
-import socialbase.com.br.challengesocialbase.component.PostListAdapter;
-import socialbase.com.br.challengesocialbase.model.Post;
-import socialbase.com.br.challengesocialbase.util.ConnectionUtil;
-import socialbase.com.br.challengesocialbase.util.Constants;
-import socialbase.com.br.challengesocialbase.webservice.AsyncReceiveRequest;
-import socialbase.com.br.challengesocialbase.webservice.WsResult;
+import socialbase.com.br.challengesocialbase.R;
+import br.com.socialbase.challengesocialbase.component.DatabaseHelper;
+import br.com.socialbase.challengesocialbase.component.PostListAdapter;
+import br.com.socialbase.challengesocialbase.model.Post;
+import br.com.socialbase.challengesocialbase.util.ConnectionUtil;
+import br.com.socialbase.challengesocialbase.util.Constants;
+import br.com.socialbase.challengesocialbase.webservice.AsyncReceiveRequest;
+import br.com.socialbase.challengesocialbase.webservice.WsResult;
 
 public class MainActivity extends BaseActivity {
 
