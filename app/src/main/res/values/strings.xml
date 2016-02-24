@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Challenge Social Base</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scrolling">DetailActivity</string>
+    <string name="title_activity_web">WebActivity</string>
+
+    <string name="type">Tipo</string>
+    <string name="category">Categoria</string>
+    <string name="username">Usuário</string>
+    <string name="title">Título</string>
+    <string name="subject">Assunto</string>
+    <string name="search">Buscar</string>
+
+    <string name="error">Erro</string>
+    <string name="connection_error">Por favor, verifique sua conexão.</string>
+
+</resources>

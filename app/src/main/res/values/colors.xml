@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#154478</color>
+    <color name="colorPrimaryDark">#052458</color>
+    <color name="colorAccent">#88888a</color>
+
+    <color name="listitemcolor1">#DEDEDE</color>
+    <color name="listitemcolor2">#EDEDED</color>
+
+    <color name="gray">#CCCCCC</color>
+</resources>
