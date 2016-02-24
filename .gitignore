@@ -1,9 +1,10 @@
+#IntelliJ
 *.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+.idea/
+
+# Gradlel
+.gradle/
+build/
+
+local.properties
 .DS_Store
-/build
-/captures
-.idea
