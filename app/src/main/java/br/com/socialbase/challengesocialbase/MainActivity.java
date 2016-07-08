@@ -97,7 +97,6 @@ public class MainActivity extends BaseActivity {
 
         SearchView searchView = (SearchView) menu.findItem(R.id.search_menu_item).getActionView();
         searchView .setQueryHint(getString(R.string.search));
-
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
