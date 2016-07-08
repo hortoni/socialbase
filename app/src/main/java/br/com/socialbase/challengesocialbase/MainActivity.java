@@ -2,9 +2,9 @@ package br.com.socialbase.challengesocialbase;
 
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.widget.EditText;
+import android.support.v7.widget.SearchView;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,7 +25,6 @@ public class MainActivity extends BaseActivity {
     private SwipeRefreshLayout swipeLayout;
     private AsyncReceiveRequest async = null;
     private DatabaseHelper databaseHelper;
-    private EditText edtSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,21 +42,6 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-        edtSearch = (EditText) findViewById(R.id.edt_search);
-        edtSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                adapter.getFilter().filter(s.toString());
-            }
-        });
 
         databaseHelper = DatabaseHelper.getInstance(this);
         getPostsFromServer();
@@ -104,6 +88,34 @@ public class MainActivity extends BaseActivity {
         for (Post post: posts) {
             databaseHelper.addPost(post);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.search_menu, menu);
+
+        SearchView searchView = (SearchView) menu.findItem(R.id.search_menu_item).getActionView();
+        searchView .setQueryHint(getString(R.string.search));
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                adapter.getFilter().filter(query.toString());
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if (adapter != null) {
+                    adapter.getFilter().filter(newText.toString());
+                }
+                return true;
+            }
+        });
+
+
+        return true;
     }
 
 }
